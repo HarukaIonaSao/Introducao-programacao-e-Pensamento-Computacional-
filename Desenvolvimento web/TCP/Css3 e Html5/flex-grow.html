@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px dotted dodgerblue;
+            max-width: 300px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .item{
+            background-color: olivedrab;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: navy;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-grow: 1</p>
+    <div class="flex-container">
+        <div class="item fg-01">A</div>
+        <div class="item fg-01">B</div>
+        <div class="item fg-01">C</div>
+        <div class="item fg-01">D</div>
+    </div>
+    
+    <p>flex-grow: alernados</p>
+    <div class="flex-container">
+        <div class="item fg-01">A</div>
+        <div class="item fg-02">B</div>
+        <div class="item fg-02">C</div>
+        <div class="item fg-01">D</div>
+    </div>
+
+    <p>flex-grow: alternados</p>
+    <div class="flex-container">
+        <div class="item fg-02">A</div>
+        <div class="item fg-02">B</div>
+        <div class="item fg-02">C</div>
+        <div class="item fg-02">D</div>
+    </div>
+
+    <p>flex-grow: 3</p>
+    <div class="flex-container">
+        <div class="item fg-03">A</div>
+        <div class="item fg-03">B</div>
+        <div class="item fg-03">C</div>
+        <div class="item fg-03">D</div>
+    </div>
+</body>
+</html>
